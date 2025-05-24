@@ -4,37 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
-
-    <header>
-        <h1>Govinda Janottama</h1>
-       
-        <nav>
+    
+    <div class="header">
+        <h1 data-aos="fade-down" data-aos-duration="2000">PORTOFOLIO</h1>
+        <nav data-aos="fade-right" data-aos-duration="2000" data-aos-delay="300">
             <table>
                 <tr>
                     <td><a href="#about">Tentang</a> |</td>
                     <td><a href="#skills">Keahlian</a> |</td>
                     <td><a href="#projects">Proyek</a> |</td>
-                    <td><a href="#contact">Kontak</a></td>
+                    <td><a href="#contact">Kontak</a> |</td>
                     <td><a href="blog.html">blog</a></td>
                 </tr>
             </table>
         </nav>
-    </header>
+    </div>
 
-    <hr>
 
-    <section id="about">
-        
-        <h2>Tentang Saya</h2>
-
-        <img src="image/Foto BG merah.jpg" alt="foto saya" height="70">
-
-        <p>Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern seperti React dan Laravel.</p>
-    </section>
-
+        <section id="about" data-aos="fade-up" data-aos-duration="3000">        
+            <h2 data-aos="fade-right" data-aos-delay="300">Tentang Saya</h2>
+            <p>Hallo nama saya I Made Govinda Janottama</p>
+            <img src="image/Foto SMA.png" alt="foto saya" height="250" data-aos="zoom-in" data-aos-delay="200">
+            <p data-aos="fade-left" data-aos-delay="300">Saya adalah seorang pengembang web dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern seperti React dan Laravel.</p>
+        </section>
 
     <hr>
 
@@ -78,15 +76,40 @@
             <label for="message">Pesan:</label><br>
             <textarea id="message" rows="4" required></textarea><br><br>
 
-            <button type="submit">Kirim</button>
+            <button type="submit">Kirim</button><br><br>
         </form>
     </section>
 
-    <hr>
-
     <footer>
-        <p>&copy; 2025 Govinda. Semua Hak Dilindungi.</p>
+        <div class="footer-container" id="Footer" data-aos="fade-up" data-aos-duration="1000">
+            <div class="footer-about">
+                <h2>Itu dia portofolio saya!</h2>
+                <p>
+                Terima kasih sudah mampir dan melihat-lihat. Semoga apa yang kami bagikan bisa menginspirasi atau bahkan membuka peluang untuk berkolaborasi. Sampai ketemu di kesempatan berikutnya!
+                </p>
+            </div>
+
+            <div class="sosial">
+                <h3>Hubungi saya melalui</h3>
+                <div class="sosial-media">
+                    <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Govinda. Semua Hak Dilindungi.</p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    once: false,
+    });
+    </script>
+</script>
 </body>
 </html>
